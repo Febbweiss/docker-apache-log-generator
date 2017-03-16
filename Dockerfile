@@ -11,7 +11,8 @@ RUN apt-get clean && apt-get update \
 	&& cd fake-apache-log-generator \
 	&& pip install -r requirements.txt \
 	&& apt-get clean \
-    && rm -rf /var/lib/apt/listss/* /tmp/* /var/tmp/*
+    && rm -rf /var/lib/apt/listss/* /tmp/* /var/tmp/* \
+	&& mkdir -p /var/log/apache
 	
 WORKDIR /fake-apache-log-generator
 
