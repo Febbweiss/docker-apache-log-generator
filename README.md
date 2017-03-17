@@ -9,6 +9,14 @@ python apache-fake-log-gen.py -o LOG -p /var/log/apache/apache -n 0 -s 3
 ```
 The endless generated file is located in /var/log and a line is appended every 3 seconds.
 
+Timezone :
+----------
+You can change the timezone mounting */etc/timezone* and */etc/localtime* files with a file content such as :
+```shell
+Europe/Paris
+```
+
+
 Licences :
 ----------
 

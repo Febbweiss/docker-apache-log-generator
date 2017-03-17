@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get clean && apt-get update \
 	&& apt-get install -y build-essential unzip \
-	&& wget -O Fake-Apache-Log-Generator.zip https://github.com/kiritbasu/Fake-Apache-Log-Generator/archive/master.zip \
+	&& wget -O Fake-Apache-Log-Generator.zip https://github.com/febbweiss/Fake-Apache-Log-Generator/archive/master.zip \
 	&& unzip Fake-Apache-Log-Generator.zip \
 	&& mv Fake-Apache-Log-Generator-master /fake-apache-log-generator \
 	&& rm Fake-Apache-Log-Generator.zip \
